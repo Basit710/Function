@@ -1,0 +1,58 @@
+/*Abdul Basit (18),bscs1D*/
+#include<iostream>
+using namespace std;
+int a,b, c, d, e, f;
+void check(){
+cout<<"#1 fun with no arg & return val "<<endl<<"enter a value :";
+cin>>a;
+if(a%2==0)
+cout<<"even"<<endl;
+else
+cout<<"odd"<<endl;
+}
+int check2(){
+cout<<"#2 fun with no arg but return val "<<endl<<"enter a value :";
+cin>>b;
+if(b%2==0)
+ return 1;
+else
+ return 2;
+}
+int check3(int c){
+if(c%2==0)
+cout<<"even"<<endl;
+else
+cout<<"odd"<<endl;
+}
+int check4(int d){
+if(d%2==0)
+ return 1;
+else
+ return 2; 
+}
+int main()
+{
+/*function #1*/
+   check();
+/*function #2*/
+e=check2();
+if(e==1){
+cout<<"even"<<endl;
+}
+else{
+cout<<"odd"<<endl;
+}
+/*function #3*/
+cout<<"#3 fun with arg but no return Val "<<endl<<"enter a value :";
+cin>>c;
+check3(c);
+/*function #4*/
+cout<<"#4 fun with arg & return Val "<<endl<<"enter a value :";
+cin>>d;
+f=check4(d);
+if(f==1)
+cout<<"even";
+else
+cout<<"odd";
+return 0;
+}
